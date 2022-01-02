@@ -3,10 +3,10 @@
 We want to analyze the statements of the seven lists candidating for the [election of the 44th student's parliament](https://wahlen.uni-bonn.de) of Bonn.
 These statements were published in the [election magazine](https://wahlen.uni-bonn.de/content/dokumente/2022/Wahlzeitung_2022.pdf) and each span four pages.
 
-### Optical Character Recognition (OCR)
+### Preprocessing
 
 First, we have to extract the statements from the published pdf file.
-For this we need to resort to OCR since for some statements, the statements are included page-spanning images. For the OCR, we use the [python wrapper of `tesseract`](https://pypi.org/project/pytesseract/). For the extraction of pdf pages as images we use [`pdf2image`](https://pypi.org/project/pdf2image/).
+For this we need to resort to optical character recognition (OCR) since some statements are included as page-spanning images. For the OCR, we use the [python wrapper of `tesseract`](https://pypi.org/project/pytesseract/). For the extraction of pdf pages as images we use [`pdf2image`](https://pypi.org/project/pdf2image/).
 
 The ocr script can be found in `ocr.py`.
 ```
@@ -30,4 +30,7 @@ It can be invoked as
 $ python ocr.py 34 > lp.log
 ```
 
-The resulting text needs some (manual) post-processing, mostly due to misrecognized two-column layouts. You can finde our postprocessed texts in the `data` folder. We decided to remove the names of individual candidates and their subjects (which are included in some statements).
+The resulting text needs some (manual) processing, mostly due to misrecognized two-column layouts. You can finde our processed texts in the `data` folder. We decided to remove the names of individual candidates and their subjects (which are included in some statements).
+
+### Analysis
+*to be added*
