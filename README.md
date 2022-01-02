@@ -34,3 +34,8 @@ The resulting text needs some (manual) processing, mostly due to misrecognized t
 
 ### Analysis
 *to be added*
+
+
+## Transparency note
+
+The author is himself a candidate for the [Liste Poppelsdorf](https://liste-poppelsdorf.de).
