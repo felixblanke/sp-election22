@@ -36,7 +36,7 @@ The resulting text needs some (manual) processing, mostly due to misrecognized t
 *to be added*
 
 ### ToDo
-* Reorganize txt data by sentences.
+
 
 ## Transparency note
 
